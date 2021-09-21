@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+}
+
+header{
+    display:block;
+    position: fixed; /*keeps header at the top and moves with the page*/
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color:lightyellow;
+    padding: 10px;
+}
+
+nav a:visited, 
+nav a:link{
+    color:black;
+    text-decoration: none;
+}
+
+nav > ul{
+    display: inline; 
+    padding:0;
+}
+
+nav > ul > li /*this says to focus on the list items of unordered lists*/ {
+    display:inline-block; /*displays hortizontally instead of vertically*/
+    list-style: none; /*this gets rid of bullet points*/
+    margin: 0 15px 0 15px;
+    font-size: 100%;
+    padding: 1% 0 1% 0
+    
+    
+}
+.logo{
+    width: 5%;
+    height:3%;
+    border: 5px solid black;
+    float: left;
+}
+
+
+h1{
+    padding-top: 1em;
+    text-align: center;
+}
+
+main{
+    display: block;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85% /*this keeps everything at the bottom of the page*/
+}
+footer{
+    background-color:lightgrey;
+    color:black;
+    
+}
+
+footer > ul > li{
+    list-style: none;
+   
+}
+
+.mispits{
+    text-decoration: underline;
+}
+footer a:visited, 
+footer a:link{
+    color:black;
+    text-decoration: none;
+    }
+
+h2{
+    padding: 10px 0 10px 0;
+    border-bottom: 1px bold black;
+}
+
+footer p{
+    padding-bottom: 10px;
+}
+
+/* beer page */
+.buddy-img{
+    float:left;
+    padding-left: 50px;
+}
+
+.buddy-all{
+    position: relative;
+}
+
+.buddy-name{
+    color:red;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.b-box{
+    position: absolute;
+    background-color: white;
+    border: solid 3px pink;
+    padding: 20px 0 20px 0;
+    margin: 120px 0px 100px 250px;
+}
