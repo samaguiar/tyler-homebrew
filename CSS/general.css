@@ -13,7 +13,7 @@ body{
 
 header{
     display:block;
-    position: fixed; /*keeps header at the top and moves with the page*/
+   /* position: fixed; keeps header at the top and moves with the page*/
     top: 0;
     left: 0;
     width:100%;
