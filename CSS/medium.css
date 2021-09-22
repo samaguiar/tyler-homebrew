@@ -20,6 +20,7 @@ nav button {
 }
 nav ul{
     display: block; 
+    margin-left: 0vw;
 }
 
 nav li {

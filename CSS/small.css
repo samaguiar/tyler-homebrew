@@ -31,6 +31,7 @@ header{
     height: 50px;
     border: 5px solid black;
     float: left;
+    margin-left: -14px;
 }
 
 
@@ -46,7 +47,7 @@ h1{
 
 main{
     display: block;
-    padding-top: 3em;
+    padding-top: 0em;
     padding-bottom: 3em;
     min-height: 85% /*this keeps everything at the bottom of the page*/
 }
@@ -59,7 +60,7 @@ h2{
 
 button#hamburgerBtn{
     background: green;
-    border: solid;
+    border: none;
     color:black;
     font-size: 2.4rem;
     cursor: pointer;
