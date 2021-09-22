@@ -4,9 +4,17 @@
         width: 25%;
     }
 
+    nav ul {
+        margin-left: 2vw;
+    }
 
+    nav li {
+        width: 20%;
+        font-size: 20px;
+    }
 
-
-
+    nav a {
+        padding: 0.7rem 1rem;
+    }
 
 }/* end of media query*/

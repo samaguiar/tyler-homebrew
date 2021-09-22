@@ -15,22 +15,29 @@ nav > ul > li{
     float: left;
 }
 
-nav > ul{
-    display: inline; 
-    padding: 0;
+nav button {
+    display:none;
+}
+nav ul{
+    display: block; 
 }
 
-nav > ul > li /*this says to focus on the list items of unordered lists*/ {
-    display:inline-block; /*displays hortizontally instead of vertically*/
-    list-style: none; /*this gets rid of bullet points*/
-    margin: 10px 15px 0 10px;
-    font-size: 15px;
-    padding: 1% 0 1% 0;  
+nav li {
+    float: left;
+    width: 20%;
 }
+
 
 }/* end of media query*/
 
 
+/*nav > ul > li this says to focus on the list items of unordered lists {
+    display:inline-block; displays hortizontally instead of vertically
+    list-style: none; this gets rid of bullet points
+    margin: 10px 15px 0 10px;
+    font-size: 15px;
+    padding: 1% 0 1% 0;  
+}*/
 
 
 
