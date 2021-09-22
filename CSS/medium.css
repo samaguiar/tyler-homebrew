@@ -4,10 +4,29 @@
     width: 50%;
 }
 
+nav > ul > li{
+    font-size: 20px;
+}
 
+.logo{
+    width: 90px;
+    height: 80px;
+    border: 5px solid black;
+    float: left;
+}
 
+nav > ul{
+    display: inline; 
+    padding: 0;
+}
 
-
+nav > ul > li /*this says to focus on the list items of unordered lists*/ {
+    display:inline-block; /*displays hortizontally instead of vertically*/
+    list-style: none; /*this gets rid of bullet points*/
+    margin: 10px 15px 0 10px;
+    font-size: 15px;
+    padding: 1% 0 1% 0;  
+}
 
 }/* end of media query*/
 
