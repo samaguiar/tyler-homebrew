@@ -4,7 +4,9 @@
     width: 50%;
 }
 
-nav > ul > li{
+/*button*/
+
+nav ul li{
     font-size: 20px;
 }
 
@@ -27,6 +29,14 @@ nav li {
     float: left;
     width: 20%;
 }
+
+.responsive {
+    width: 65%;
+    margin: 6px 0;
+  }
+
+/*footer css*/
+
 
 
 }/* end of media query*/
