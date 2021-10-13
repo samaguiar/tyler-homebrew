@@ -1,0 +1,265 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+html, body{
+    height: 100%
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+}
+
+
+/* header style */
+
+header{
+    /*display:block;*/
+   /* position: fixed; keeps header at the top and moves with the page*/
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color:rgb(42, 170, 164);
+    padding: 10px;
+   
+}
+
+.logo{
+    width: 60px;
+    height: 50px;
+    border: 5px solid black;
+    float: left;
+    margin-left: -14px;
+}
+
+
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/*main style*/
+
+
+h1{
+    padding-top: 1em;
+    text-align: center;
+}
+
+main{
+    display: block;
+    padding-top: 0em;
+    padding-bottom: 3em;
+    min-height: 85% /*this keeps everything at the bottom of the page*/
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    /*padding: 10px 0 10px 0;*/
+    border-bottom: 1px bold black;
+}
+
+h3 {
+    /*padding: 1px 0 4px 0;*/
+    border-bottom: 1px bold black;
+    border-bottom: 1px bold black;
+    text-align: center;
+}
+
+
+button#hamburgerBtn{
+    background: rgb(13, 17, 75);
+    border: none;
+    color:white;
+    font-size: 3.2rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+    }
+
+
+nav{
+    background: rgb(13, 17, 75);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .9rem 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li.active{
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+nav ul.open{
+    display: block;
+    background-color: rgb(13, 17, 75);
+}
+
+nav ul {
+    display:none;
+}
+
+/*flex box*/
+
+.flex-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px purple;
+    /*text-align: center;*/
+    flex-direction: column; 
+    padding: 20px;
+}
+
+
+.flex-child{
+        border: dashed 1px green;
+        display: block;
+        margin: 5px;
+}
+
+.flex-icon {
+    padding: 20px;
+    border: solid 1px red;
+
+}
+/*gallery*/
+.gallery {
+    margin: 5px; /*when set to auto gallery tiles are centered, but are too close*/
+    border: 3px solid lightgrey;
+    padding: 10px;
+    background-color: rgb(42, 170, 164, 0.3);
+    cursor: pointer;
+    display: block;
+    
+  }
+
+.gallery:hover {
+    border: 4px solid black;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+h3{
+    text-align: center;
+}
+
+p.desc {
+    text-align: center;
+    padding: 15px;
+}
+/* footer style*/
+
+footer{
+    background-color:lightgrey;
+    color:black;
+    
+}
+
+footer ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+   
+}
+footer h2{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a:visited, 
+footer a:link{
+    color:black;
+    text-decoration: none;
+    }
+
+
+@media only screen and (min-width: 768px){
+    .flex-parent{
+        display: flex;
+        justify-content: space-between;
+        border: solid 1px blue;
+        flex-direction: row;
+        text-align: center;
+        padding: 20px;
+    
+    }
+
+    .flex-child{
+        /*border: dashed 1px black;*/
+        display: block;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    nav button {
+        display:none;
+    }
+    nav ul{
+        display: block; 
+        margin-left: 0vw;
+    }
+    
+    nav li {
+        float: left;
+        width: 20%;
+        background-color: rgb(13, 17, 75);
+    }
+    
+    nav ul li{
+        font-size: 20px;
+    }
+
+
+
+} /*end of media query*/
+
+@media only screen and (min-width: 1024px){
+
+    .flex-parent{
+        display: flex;
+        justify-content: space-between;
+        border: solid 1px pink;
+        flex-direction: row;
+        text-align: center;
+        padding: 20px;
+    
+    }
+
+    .flex-child{
+        /*border: dashed 1px black;*/
+        display: block;
+        margin: 5px;
+        text-align: center;
+    }
+
+}/*end of media query*/
